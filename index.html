@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSE Coding Competition - Registration</h1>
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="news/mainNews.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <section class="formc">
+      <div class="card">
+        <h2 id="mem">Team Member 1</h2>
+        <form action="post">
+          <input
+            type="text"
+            name="email"
+            id="fname"
+            placeholder="Fullname"
+            size="30"
+            alt="full name field"
+          />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input
+            type="tel"
+            name="pnumber"
+            id="pnumber"
+            placeholder="Phone Number"
+          />
+          <label for="dropdown" class="droptext">Pick Your Major:</label>
+          <select name="dropdown" id="dropdown">
+            <option value="computerscience">CS</option>
+            <option value="cybersecurity">CS-CS</option>
+            <option value="gamedev">GMD</option>
+            <option value="softwareengineer">SE</option>
+          </select>
+          <h2>Competition Details</h2>
+          <input
+            type="text"
+            name="teamname"
+            id="teamname"
+            placeholder="Team name"
+          />
+          <label for="radiom">Preferred Coding Language</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="language" value="Java" />
+              <span>Java</span>
+            </label>
+            
+            <label>
+              <input type="radio" name="language" value="Python" />
+              <span>Python</span>
+            </label>
+            
+            <label>
+              <input type="radio" name="language" value="C++" />
+              <span>C++</span>
+            </label>
+          </div>
+
+          <button type="submit">Submit Registration</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 CSE Coding Competition. All Rights Reserved</footer>
+  </body>
+</html>
